@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/title_destination">
+    <fragment
+        android:id="@+id/title_destination"
+        android:name="com.example.guesstheword.TitleFragment"
+        android:label="title_fragment"
+        tools:layout="@layout/title_fragment"/>
+</navigation>

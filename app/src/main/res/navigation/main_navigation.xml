@@ -7,5 +7,19 @@
         android:id="@+id/title_destination"
         android:name="com.example.guesstheword.TitleFragment"
         android:label="title_fragment"
-        tools:layout="@layout/title_fragment"/>
+        tools:layout="@layout/title_fragment">
+        <action
+            android:id="@+id/action_title_to_game"
+            app:destination="@id/game_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_destination"
+        android:name="com.example.guesstheword.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" />
 </navigation>

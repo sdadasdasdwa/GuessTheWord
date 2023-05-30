@@ -1,7 +1,7 @@
 # GuessTheWord (ViewModel and ViewModelFactory)
 record studying
 
-of what you will learn
+what you will learn
 ------------
 - 如何使用推荐的 Android `应用架构`。
 - 如何在您的应用程序中使用 `Lifecycle`、 `ViewModel`和 `ViewModelFactory`类。
@@ -9,7 +9,7 @@ of what you will learn
 - 什么是`工厂方法`设计模式以及如何使用它。
 - 如何`ViewModel`使用接口创建对象`ViewModelProvider.Factory`。
 
-of what you will do
+what you will do
 ------------
 - 将 a 添加 `ViewModel`到应用程序，以保存应用程序的数据，以便数据在配置更改后仍然存在。
 - 使用 `ViewModelFactory`工厂方法设计模式来实例化`ViewModel`带有构造函数参数的对象。

@@ -18,3 +18,5 @@ Introduction
 ------------
 第一个玩家查看应用程序中的单词并依次表演每个单词，确保不要将单词显示给第二个玩家。第二个玩家试图猜测这个词。
 
+![Image Description](app/src/main/res/img.png)
+

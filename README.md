@@ -33,16 +33,19 @@ Introduction
 ### 视图模型工厂
   A `ViewModelFactory`实例化`ViewModel`对象，有或没有构造函数参数。
 
+### 任务：创建GameViewModel
 
+#### 一.添加 GameViewModel 类
 
-一.添加 GameViewModel 类
 1.打开build.gradle(module:app)文件。在dependencies块内，为ViewModel.
 ```
 //ViewModel
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 ```
 2.在 packagescreens/game/文件夹中，创建一个名为GameViewModel.
+
 3.使GameViewModel类扩展抽象类 ViewModel。
+
 4.为了帮助更好地理解 是如何ViewModel感知生命周期的，请添加一个init带有语句的块log。
 ```
 class GameViewModel : ViewModel() {

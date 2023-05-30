@@ -33,7 +33,7 @@ Introduction
 ### 视图模型工厂
   A `ViewModelFactory`实例化`ViewModel`对象，有或没有构造函数参数。
 
-```
+
 
 一.添加 GameViewModel 类
 1.打开build.gradle(module:app)文件。在dependencies块内，为ViewModel.
@@ -53,4 +53,4 @@ class GameViewModel : ViewModel() {
 ```
 
 
-```
+

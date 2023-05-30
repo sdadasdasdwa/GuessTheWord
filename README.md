@@ -69,4 +69,12 @@ override fun onCleared() {
 
 
 
+### 第 3 步：将 GameViewModel 与游戏片段相关联
+1.在类中，在最顶层GameFragment添加一个类型的字段作为类变量。GameViewModel
+```
+private lateinit var viewModel: GameViewModel
+```
+
+
+
 

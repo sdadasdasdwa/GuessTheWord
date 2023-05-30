@@ -20,7 +20,6 @@ class TitleFragment : Fragment(){
         val binding = DataBindingUtil.inflate<TitleFragmentBinding>(inflater,R.layout.title_fragment,container,false)
         binding.playGameButton.setOnClickListener {
             findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
-//            Toast.makeText(context,"TitleFragment",Toast.LENGTH_LONG).show()
         }
         return binding.root
     }

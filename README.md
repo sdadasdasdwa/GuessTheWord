@@ -35,7 +35,7 @@ Introduction
 
 ### 任务：创建GameViewModel
 
-#### 一.添加 GameViewModel 类
+#### 第 1 步：添加 GameViewModel 类
 
 1.打开build.gradle(module:app)文件。在dependencies块内，为ViewModel.
 ```
@@ -54,6 +54,19 @@ class GameViewModel : ViewModel() {
    }
 }
 ```
+#### 第 2 步：覆盖onCleared( ) 并添加日志记录
+  ` ViewModel`当关联的片段分离或活动完成时，将被销毁。就在`ViewModel`被销毁之前，`onCleared()`调用回调来清理资源。
+  
+1.在GameViewModel类中，重写该onCleared()方法。
+
+2.在里面添加一条日志语句onCleared()来跟踪GameViewModel生命周期。
+```
+override fun onCleared() {
+   super.onCleared()
+   Log.i("GameViewModel", "GameViewModel destroyed!")
+}
+```
+
 
 
 

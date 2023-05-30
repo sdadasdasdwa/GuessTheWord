@@ -20,3 +20,15 @@ Introduction
 
 ![Image Description](app/src/main/res/img.png)
 
+### 应用架构
+   GuessTheWord 应用所做的改进遵循 Android 应用架构指南，并且您使用 Android 架构组件。Android 应用架构类似于 MVVM（模型-视图-视图模型）架构模式。
+   
+### 界面控制器
+  在 GuessTheWord 起始代码中，UI 控制器是三个片段：`GameFragment`,`ScoreFragment`,和`TitleFragment`。
+  
+### 视图模型
+  A `ViewModel`保存要显示在与关联的片段或活动中的数据.在此架构中，ViewModel执行决策。保存GameViewModel分值、
+  单词列表和当前单词等数据，因为这是要在屏幕上显示的数据。它还GameViewModel包含执行简单计算以确定数据当前状态的业务逻辑。
+  
+### 视图模型工厂
+  A `ViewModelFactory`实例化`ViewModel`对象，有或没有构造函数参数。
